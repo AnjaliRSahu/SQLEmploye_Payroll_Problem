@@ -10,4 +10,7 @@ StartDate date
 
 select * from Payroll_Service;
 
-insert into Payroll_Service (Name,Salary,Startdate)values()
+insert into Payroll_Service (Name,Salary,Startdate)values('Sam',10000,GETDATE()),
+														 ('John',20000,GETDATE()),
+														 ('Smith',30000,GETDATE()),
+														 ('Jeniffer',35000,GETDATE());
