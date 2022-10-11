@@ -22,14 +22,14 @@ insert into Payroll_Service (Name,Salary,StartDate)values('Ash',40000,'2021-09-0
 
 
 update Payroll_Service 
-set StartDate='2020-01-01' where ID=1;
+set StartDate='2020-01-01' where ID=7;
 
 update Payroll_Service 
-set StartDate='2018-01-01' where ID=2;
+set StartDate='2018-01-01' where ID=8;
 
 
 update Payroll_Service 
-set StartDate='2017-01-01' where ID=3;
+set StartDate='2017-01-01' where ID=9;
 
 select salary,Name,ID,StartDate from Payroll_Service where StartDate between CAST('2020-01-01'AS date)And GETDate();
 
@@ -58,5 +58,24 @@ Select MAX(salary)as MAXSalary from Payroll_Service
 where Gender='F' group by Gender;
 
 select count(*)as TotalRows from Payroll_Service;
+
+alter table Payroll_Service
+add PhoneNumber varchar(255);
+
+select * from Payroll_Service;
+
+alter table Payroll_Service
+add Address varchar(255) Default Mumbai;
+
+alter table Payroll_Service
+add Department varchar(255);
+
+
+
+
+
+
+
+
 
 
