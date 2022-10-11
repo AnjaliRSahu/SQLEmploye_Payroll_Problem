@@ -32,3 +32,12 @@ update Payroll_Service
 set StartDate='2017-01-01' where ID=3;
 
 select salary,Name,ID,StartDate from Payroll_Service where StartDate between CAST('2020-01-01'AS date)And GETDate();
+
+alter table Payroll_Service
+add Gender char(1);
+
+update Payroll_service
+set Gender='M' where name in ('Sam','John','Smith');
+
+update Payroll_service
+set Gender='F' where name in ('Ash','Anji','Jeniffer');
