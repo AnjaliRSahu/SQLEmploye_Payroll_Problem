@@ -41,3 +41,22 @@ set Gender='M' where name in ('Sam','John','Smith');
 
 update Payroll_service
 set Gender='F' where name in ('Ash','Anji','Jeniffer');
+
+Select SUM(salary)as TotalSalary from Payroll_Service
+where Gender='F' group by Gender;
+
+
+Select AVG(salary)as AVGSalary from Payroll_Service
+where Gender='F' group by Gender;
+
+
+Select MIN(salary)as MINSalary from Payroll_Service
+where Gender='F' group by Gender;
+
+
+Select MAX(salary)as MAXSalary from Payroll_Service
+where Gender='F' group by Gender;
+
+select count(*)as TotalRows from Payroll_Service;
+
+
